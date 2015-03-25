@@ -61,7 +61,7 @@ ng.module('smart-table')
         if (newValue !== oldValue) {
           updateSafeCopy();
         }
-      }, true);
+    }, !!$attrs.objectEquality);
     }
 
     /**
